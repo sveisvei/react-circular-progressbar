@@ -103,10 +103,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      if (this.props.initialAnimation) {
 	        setTimeout(function () {
-	          _this2.setState({
-	            percentage: _this2.props.percentage
+	          window.requestAnimationFrame(function () {
+	            _this2.setState({
+	              percentage: _this2.props.percentage
+	            });
 	          });
-	        }, 10);
+	        }, 0);
 	      }
 	    }
 	  }, {
@@ -4240,7 +4242,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	console.log('react-circular-progressbar v' + ("0.1.0"));
+	console.log('react-circular-progressbar v' + ("0.1.2"));
 
 	var githubURL = 'https://github.com/iqnivek/react-circular-progressbar';
 
@@ -4279,7 +4281,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        { className: 'row' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-xs-6 offset-xs-3' },
+	          { className: 'col-xs-4 offset-xs-4' },
 	          children
 	        )
 	      )
@@ -4455,7 +4457,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        _react2.default.createElement(
 	          'h2',
 	          { className: 'text-xs-center m-y-3' },
-	          'Configuration'
+	          'Props'
 	        ),
 	        _react2.default.createElement(Config, {
 	          name: 'percentage',
@@ -4467,11 +4469,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	          example: '10',
 	          description: 'Width of circular line'
 	        }),
-	        _react2.default.createElement(Config, {
-	          name: 'initialAnimation',
-	          example: 'false',
-	          description: 'Toggle whether to animate progress starting from 0% on initial mount.'
-	        }),
+	        _react2.default.createElement(
+	          Config,
+	          {
+	            name: 'initialAnimation',
+	            example: 'false',
+	            description: 'Toggle whether to animate progress starting from 0% on initial mount.'
+	          },
+	          _react2.default.createElement(_src2.default, {
+	            percentage: 50,
+	            initialAnimation: true
+	          })
+	        ),
 	        _react2.default.createElement(Config, {
 	          name: 'classForPercentage',
 	          example: '(pct) => pct < 100 ? \'incomplete\' : \'complete\'',
