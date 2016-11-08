@@ -4253,7 +4253,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var children = _ref.children;
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'row m-b-3' },
+	    { className: 'row mb-3' },
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'col-xs-12 col-md-6 offset-md-3' },
@@ -4267,7 +4267,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        ),
 	        _react2.default.createElement(
 	          'small',
-	          { className: 'text-muted m-l-1' },
+	          { className: 'text-muted ml-1' },
 	          example ? 'e.g. ' + example : null
 	        )
 	      ),
@@ -4297,7 +4297,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    { className: 'col-xs-12 col-sm-6' },
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'row' },
+	      { className: 'row mb-1' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'col-xs-4 offset-xs-4' },
@@ -4368,7 +4368,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        { className: 'container' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'row m-y-3' },
+	          { className: 'row my-3' },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'col-xs-12' },
@@ -4377,7 +4377,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              { className: 'text-xs-center' },
 	              _react2.default.createElement(
 	                'h1',
-	                { className: 'm-b-2' },
+	                { className: 'mb-2' },
 	                ("react-circular-progressbar")
 	              ),
 	              _react2.default.createElement(
@@ -4390,7 +4390,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'row m-b-3' },
+	          { className: 'row mb-3' },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'col-xs-6 offset-xs-3 col-md-2 offset-md-5' },
@@ -4401,7 +4401,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'text-xs-center m-y-3' },
+	          { className: 'text-xs-center my-3' },
 	          _react2.default.createElement(
 	            'p',
 	            null,
@@ -4409,7 +4409,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          ),
 	          _react2.default.createElement(
 	            'p',
-	            { className: 'm-b-3' },
+	            { className: 'mb-3' },
 	            _react2.default.createElement(
 	              'code',
 	              null,
@@ -4426,7 +4426,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        _react2.default.createElement('hr', null),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'row m-t-3' },
+	          { className: 'row mt-3' },
 	          _react2.default.createElement(
 	            Example,
 	            {
@@ -4456,7 +4456,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        _react2.default.createElement('hr', null),
 	        _react2.default.createElement(
 	          'h2',
-	          { className: 'text-xs-center m-y-3' },
+	          { className: 'text-xs-center my-3' },
 	          'Props'
 	        ),
 	        _react2.default.createElement(Config, {
@@ -4494,7 +4494,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        _react2.default.createElement('hr', null),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'text-xs-center m-y-3' },
+	          { className: 'text-xs-center my-3' },
 	          _react2.default.createElement(
 	            'a',
 	            { className: 'btn btn-info btn-lg', href: githubURL },
