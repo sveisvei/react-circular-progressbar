@@ -102,8 +102,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var _this2 = this;
 
 	      if (this.props.initialAnimation) {
-	        setTimeout(function () {
-	          window.requestAnimationFrame(function () {
+	        this.initialTimeout = setTimeout(function () {
+	          _this2.requestAnimationFrame = window.requestAnimationFrame(function () {
 	            _this2.setState({
 	              percentage: _this2.props.percentage
 	            });
@@ -117,6 +117,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.setState({
 	        percentage: nextProps.percentage
 	      });
+	    }
+	  }, {
+	    key: 'componentWillUnmount',
+	    value: function componentWillUnmount() {
+	      clearTimeout(this.initialTimeout);
+	      window.cancelAnimationFrame(this.requestAnimationFrame);
 	    }
 	  }, {
 	    key: 'render',
@@ -4242,7 +4248,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	console.log('react-circular-progressbar v' + ("0.1.2"));
+	console.log('react-circular-progressbar v' + ("0.1.3"));
 
 	var githubURL = 'https://github.com/iqnivek/react-circular-progressbar';
 
